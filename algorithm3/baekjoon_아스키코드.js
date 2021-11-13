@@ -2,8 +2,7 @@ const fs = require("fs");
 const filepath = process.platform === "linux" ? "/dev/stdin" : "./input.txt";
 let input = fs.readFileSync(filepath).toString().split(" ");
 
-const A = input[0];
-const B = input[1];
-const V = input[2];
+let str = input.toString();
+result = str.charCodeAt(0);
 
-console.log(Math.ceil((C = (V - B) / (A - B))));
+console.log(result);
