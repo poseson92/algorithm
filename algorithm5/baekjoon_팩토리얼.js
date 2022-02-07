@@ -8,4 +8,5 @@ let num1 = 1;
 for (let i = 1; i <= num; i++) {
   num1 *= i;
 }
+
 console.log(num1);
