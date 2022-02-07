@@ -8,7 +8,6 @@ for (let i = 1; i <= num; i++) {
   const [x1, y1, r1, x2, y2, r2] = input[i]
     .split(" ")
     .map((el) => parseInt(el));
-
   const p1 = { x: x1, y: y1 };
   const p2 = { x: x2, y: y2 };
   const Distance = getDistance(p1, p2);
@@ -22,7 +21,6 @@ function getDistance(p1, p2) {
 function count(d, r1, r2) {
   const sum = (r1 + r2) ** 2;
   const min = (r1 - r2) ** 2;
-
   if (d == 0) {
     // 원점이 같을 때
     if (r1 == r2) return -1;
